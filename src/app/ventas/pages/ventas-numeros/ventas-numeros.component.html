@@ -1,1 +1,45 @@
-<p>ventas-numeros works!</p>
+
+
+<div class="text-layout">
+    <h1>DecimalPipe y Porcentaje</h1>
+    <p>Pipes incluidos en Angular - Como parte del CommonModule</p>
+</div>
+
+<div class="grid">
+
+    <div class="col-6">
+        <p-card header="Ventas netas" subheader="number">
+            <div>{{ventasNetas}} | number = {{ventasNetas | number}}</div>
+            <div>{{ventasNetas}} | number:"1.2-2" = {{ventasNetas | number:"1.2-2"}}</div>
+            <div>{{ventasNetas}} | number:"1.3-3" = {{ventasNetas | number:"1.3-3"}}</div>
+            <div>{{ventasNetas}} | number:"1.4-4" = {{ventasNetas | number:"1.4-4"}}</div>
+            <div>{{ventasNetas}} | number:"1.5-5" = {{ventasNetas | number:"1.5-5"}}</div>
+            <div>{{ventasNetas}} | number:"1.6-6" = {{ventasNetas | number:"1.6-6"}}</div>
+        </p-card>
+    </div>
+
+    <div class="col-6">
+        <p-card header="Ventas brutas" subheader="currency">
+            <div>{{ventasBrutas}} | currency = {{ventasBrutas | currency}}</div>
+            <div>{{ventasBrutas}} | currency:"MXN" = {{ventasBrutas | currency:"MXN"}}</div>
+            <div>{{ventasBrutas}} | currency:"MXN":"symbol-narrow" = {{ventasBrutas | currency:"MXN":"symbol-narrow"}}</div>
+            <div>{{ventasBrutas}} | currency:"USD":"symbol-narrow" = {{ventasBrutas | currency:"USD":"symbol-narrow"}}</div>
+            <div>{{ventasBrutas}} | currency:"MXN":"symbol-narrow":"1.4-4" = {{ventasBrutas | currency:"MXN":"symbol-narrow":"1.4-4"}}</div>
+            <div>{{ventasBrutas}} | currency:"USD":"symbol-narrow":"1.4-4" = {{ventasBrutas | currency:"USD":"symbol-narrow":"1.4-4"}}</div>
+        </p-card>
+    </div>
+
+</div>
+
+<div class="grid">
+    <div class="col-6">
+        <p-card header="Porcentaje" subheader="percent">
+            <div>{{porcentaje}} = {{porcentaje}}</div>
+            <div>{{porcentaje}} | percent = {{porcentaje | percent}}</div>
+            <div>{{porcentaje}} | percent:"1.1-1" = {{porcentaje | percent:"1.1-1"}}</div>
+            <div>{{porcentaje}} | percent:"1.2-2" = {{porcentaje | percent:"1.2-2"}}</div>
+        </p-card>
+    </div>
+</div>
+
+
