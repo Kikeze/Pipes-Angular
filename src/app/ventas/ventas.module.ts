@@ -6,6 +6,9 @@ import { VentasNumerosComponent } from './pages/ventas-numeros/ventas-numeros.co
 import { VentasNoComunesComponent } from './pages/ventas-no-comunes/ventas-no-comunes.component';
 import { VentasBasicosComponent } from './pages/ventas-basicos/ventas-basicos.component';
 import { VentasOrdenarComponent } from './pages/ventas-ordenar/ventas-ordenar.component';
+import { MayusculasPipe } from './pipes/mayusculas.pipe';
+import { VuelaPipe } from './pipes/vuela.pipe';
+import { OrdenarPipe } from './pipes/ordenar.pipe';
 
 
 
@@ -15,6 +18,9 @@ import { VentasOrdenarComponent } from './pages/ventas-ordenar/ventas-ordenar.co
         VentasNoComunesComponent,
         VentasBasicosComponent,
         VentasOrdenarComponent,
+        MayusculasPipe,
+        VuelaPipe,
+        OrdenarPipe,
     ],
     imports: [
         CommonModule,
